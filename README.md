@@ -51,7 +51,7 @@ The **scenario used in this project** is as follows:
 
 ## Contribution
 
-- TODO: Describe this part.
+Feature requests, issues, pull requests and questions are welcome.
 
 ## References
 
