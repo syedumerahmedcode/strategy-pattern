@@ -55,8 +55,10 @@ The **scenario used in this project** is as follows:
 
 ## References
 
-
-- TODO: Describe this part.
+- [1](https://www.youtube.com/watch?v=v9ejT8FO-7I): Strategy Pattern – Design Patterns (ep 1) **(Youtube)** **[Primary Video resource for this project]**
+- [2](https://www.youtube.com/watch?v=slfeCvztnT4): Strategy Pattern (in real life) Screencast – OO Design Patterns Screencasts (ep 2)
+ **(Youtube)**
+- [3](https://www.youtube.com/watch?v=13nftsQUUE0): Strategy Pattern Screencast – OO Design Patterns Screencasts (ep 1) **(Youtube)**
 
 ## Contact Information
 
