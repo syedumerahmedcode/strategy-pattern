@@ -19,15 +19,16 @@
 
 ## Out Of Scope
 
-- TODO: Describe this part.
+Since the main idea is to implement strategy method pattern in code, tests are out of scope of this project. 
 
 ## Explanation Strategy Pattern
 
-**Reasons for using factory method pattern:**
+**Reasons for using strategy method pattern:**
 
 The **scenario used in this project** is as follows:
 
 - TODO: Describe scenario!
+- TODO: Create a rough UML diagram and adapt to the simulation solution implemented in the code.
 
 **Solution:**
 
