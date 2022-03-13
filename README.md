@@ -39,11 +39,11 @@ The **scenario used in this project** is as follows:
 
 ## Technologies Used
 
-- TODO: Describe this part.
+- Java 11
 
 ## Prerequisities
 
-- TODO: Describe this part.
+None
 
 ## Commands
 
