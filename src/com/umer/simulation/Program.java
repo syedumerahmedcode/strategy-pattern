@@ -13,9 +13,6 @@ public class Program {
 //		System.out.println("Hi, "+personName);
 
 		Simulation simulation = new Simulation();
-		List<String> result=simulation.run();
-		result.stream()
-				.forEach((currentResult)
-						-> System.out.println(currentResult));
+		simulation.run();
 	}
 }

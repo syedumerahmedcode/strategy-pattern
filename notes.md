@@ -12,4 +12,4 @@
  
  - The logic for writing the output of the coin flipper is where we intend to use startegy pattern. 
  
-- Current time stamp: 08:13
+- Current time stamp: 20:10

@@ -7,7 +7,7 @@ import java.util.Random;
 public class Simulation {
 	Random rnd = new Random();
 
-	public List run() {
+	public void run() {
 		List results=new ArrayList<String>();
 		for(int i=0;i<10;i++) {
 			/*
@@ -18,7 +18,9 @@ public class Simulation {
 			String result = this.rnd.nextDouble() <= 0.5 ? "Heads" : "Tails";
 			results.add(result);
 		}
-			return results;
+		results.stream()
+		.forEach((currentResult)
+				-> System.out.println(currentResult));
 		
 	}
 }
