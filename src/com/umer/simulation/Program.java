@@ -11,6 +11,7 @@ public class Program {
 //		System.out.println("Hi, "+personName);
 
 		Simulation simulation = new Simulation();
-		simulation.run();
+		String result=simulation.run();
+		System.out.println(result);
 	}
 }
