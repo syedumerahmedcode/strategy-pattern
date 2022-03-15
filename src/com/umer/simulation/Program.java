@@ -1,6 +1,6 @@
 package com.umer.simulation;
 
-import com.umer.simulation.writer.ConsoleWriter;
+import com.umer.simulation.writer.CsvWriter;
 import com.umer.simulation.writer.Writer;
 
 public class Program {
@@ -12,8 +12,9 @@ public class Program {
 //		String personName = input.nextLine();
 //		
 //		System.out.println("Hi, "+personName);
-		Writer writer=new ConsoleWriter();
-//		Writer writer=new CsvWriter();
+//		Writer writer=new ConsoleWriter();
+		String path = "output.txt";
+		Writer writer = new CsvWriter(path);
 		Simulation simulation = new Simulation(writer);
 		simulation.run();
 	}

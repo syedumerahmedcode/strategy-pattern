@@ -13,5 +13,7 @@
  - The logic for writing the output of the coin flipper is where we intend to use startegy pattern. 
  
 - Strategy Pattern: "It defines a family of algorithm and allows you to , at runtime, vary between them." --> In our case, the family of algorithms is the writer family which we switch in between depending on how we want to log the simulation. So, console write is one variation of this algorithm.
+
+- Advantage of design pattern: Design pattern open up new avenues of abstraction or to put in more elegantly, how it can make your code base afford particular types of change requests very cheaply. 
  
 - Current time stamp: 20:10
