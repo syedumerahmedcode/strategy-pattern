@@ -4,8 +4,16 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import com.umer.simulation.writer.Writer;
+
 public class Simulation {
+	Writer writer;
+	
 	Random rnd = new Random();
+	
+	public Simulation(Writer writer) {
+		this.writer=writer;
+	}
 
 	public void run() {
 		List results=new ArrayList<String>();
@@ -20,7 +28,7 @@ public class Simulation {
 		}
 		results.stream()
 		.forEach((currentResult)
-				-> System.out.println(currentResult));
+				-> this.writer.write((String) currentResult));
 		
 	}
 }

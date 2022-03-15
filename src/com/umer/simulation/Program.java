@@ -1,6 +1,7 @@
 package com.umer.simulation;
 
-import java.util.List;
+import com.umer.simulation.writer.ConsoleWriter;
+import com.umer.simulation.writer.Writer;
 
 public class Program {
 
@@ -11,8 +12,9 @@ public class Program {
 //		String personName = input.nextLine();
 //		
 //		System.out.println("Hi, "+personName);
-
-		Simulation simulation = new Simulation();
+		Writer writer=new ConsoleWriter();
+//		Writer writer=new CsvWriter();
+		Simulation simulation = new Simulation(writer);
 		simulation.run();
 	}
 }
