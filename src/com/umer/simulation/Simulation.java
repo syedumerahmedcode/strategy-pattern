@@ -7,25 +7,22 @@ import java.util.Random;
 import com.umer.simulation.writer.Writer;
 
 public class Simulation {
+	private static final String TAILS = "Tails";
+	private static final String HEADS = "Heads";
 	Writer writer;
 	int numberOfRuns;
-
-	Random rnd ;
+	Random rnd;
 
 	public Simulation(int numberOfRuns, long seed, Writer writer) {
 		this.writer = writer;
 		this.numberOfRuns = numberOfRuns;
-		this.rnd=new Random(seed);
+		this.rnd = new Random(seed);
 	}
 
 	public void run() {
-		List results = new ArrayList<String>();
+		ArrayList<String> results = new ArrayList<String>();
 		for (int i = 0; i < numberOfRuns; i++) {
-			/*
-			 * flip a coin and return heads 50% of the time and 
-			 * tails 50% of the time.
-			 */
-			String result = this.rnd.nextDouble() <= 0.5 ? "Heads" : "Tails";
+			String result = executeSimulation();
 			results.add(result);
 		}
 		results.stream()
@@ -33,5 +30,16 @@ public class Simulation {
 						this.writer
 							.write((String) currentResult));
 
+	}
+
+	/**
+	 * flip a coin and return heads 50% of the time and tails 50% of the time.
+	 * 
+	 * @return The result of the simulation. In the case, the result of the coin
+	 *         flip.
+	 */
+	private String executeSimulation() {
+		String result = this.rnd.nextDouble() <= 0.5 ? HEADS : TAILS;
+		return result;
 	}
 }

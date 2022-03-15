@@ -16,4 +16,5 @@
 
 - Advantage of design pattern: Design pattern open up new avenues of abstraction or to put in more elegantly, how it can make your code base afford particular types of change requests very cheaply. 
  
+- Possible symptoms of when to use strategy pattern: If there is something that one feels is hard-coded in a place where it should not be hard-coded, one can almost always dependency inject that thing. One can always encapsulate it, put it in a class, give it a name and them delegate it to the method that would execute that particular piece of logic.
 - Current time stamp: 20:10
