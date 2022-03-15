@@ -14,7 +14,9 @@
 
 ## Introduction
 
-The aim of this project is to show case how can one use strategy pattern to describe a bunch of algorithms, put each of them into a separate class, and make their objects interchangeable. Otherwise, without strategy pattern, one would use inheritance to solve the same problem. Using inheritance works on a small code base but it is very costly to change on a large code base with a chain of inheritance across multiple class.
+The aim of this project is to show case how can one use strategy pattern to describe a bunch of algorithms, put each of them into a separate class, and make their objects interchangeable. 
+
+In simple words,  It allows us to change the algorithm independently without changing the client using it.
 
 
 ## Out Of Scope
@@ -24,7 +26,7 @@ Since the main idea is to implement strategy method pattern in code, tests are o
 ## Explanation Strategy Pattern
 
 **Reasons for using strategy method pattern:**
-- Problem with inheritance: TODO: Describe it with a general scenario.
+- Problem with inheritance: TODO: Describe it with a general scenario. Use theexample of Ducks but in a general way.
 - strategy pattern uses composition.
 
 The **scenario used in this project** is as follows:
