@@ -25,6 +25,14 @@ Since the main idea is to implement strategy method pattern in code, tests are o
 
 ## Explanation Strategy Pattern
 
+**Background**
+
+There are two use cases in programming which are not so easy to solve when applied to a number of classes/large code base. They are:
+
+* multiple if/else for a logic: TODO: Describe this part!
+
+* Inheritance cases in which not all methods must be implemented in child classes: TODO: Describe this part!
+
 **Reasons for using strategy method pattern:**
 - Problem with inheritance: TODO: Describe it with a general scenario. Use the example of Ducks but in a general way.
 - strategy pattern uses composition.
