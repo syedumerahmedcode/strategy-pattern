@@ -79,6 +79,7 @@ Feature requests, issues, pull requests and questions are welcome.
 - [3](https://www.youtube.com/watch?v=13nftsQUUE0): Strategy Pattern Screencast – OO Design Patterns Screencasts (ep 1) **(Youtube)**
 - [4](https://refactoring.guru/design-patterns/strategy): Design Patterns / Behavioral Patterns / Strategy
 - [5](https://www.go4expert.com/articles/design-patterns-simple-examples-t5127/#strategy): Design Patterns in Simple Examples
+- [6](https://softwareengineering.stackexchange.com/questions/418391/advantages-of-strategy-design-pattern-versus-simple-if-else): Advantages of strategy design pattern versus simple if-else
 
 ## Contact Information
 
