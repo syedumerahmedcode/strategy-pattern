@@ -43,12 +43,24 @@ However, if we create a child class:
 
 Also, in the future, if a method to Duck class is introduced, it must be implemented in all of its sub classes regardless of the fact it makes sense or not.
 
-TBD 
+Another interesting scenario is that sometimes there are certain methods(or behaviors) which are shared across _some_ child classes but _not all_ child classes.  
   
+This is where using strategy pattern makes sense as described below.
 
 **Reasons for using strategy method pattern:**
-- Problem with inheritance: TODO: Describe it with a general scenario. Use the example of Ducks but in a general way.
-- strategy pattern uses composition.
+
+- strategy pattern uses composition. Due to this nature, we can extract out the behavior into separate interfaces, create multiple classes which implement these methods(can also be considered as algorithms) and inject them into the client class. 
+
+So, for the example in previous section, we will create: 
+_IDisplayBehavior_ containing _display()_ method and with concrete implementations: _CityDuckDisplay_ and _RubberDuckDisplay_ classes.
+
+However, for _IFlyBehavior_ with _fly()_ method, we only create one concrete implementation, namely _CityDuckDisplay_ class.
+
+At runtime, we will _inject_ the necessary behaviors in the modified Duck class and initialize it in the constructor. For more information/better explanation, please check the primary video resource in the reference section.
+
+A general class diagram for this design pattern is as follows:
+
+- TODO: Insert general diagram--> Time stamp: 33:17 in resource [1]. 
 
 The **scenario used in this project** is as follows:
 
@@ -100,4 +112,3 @@ How to reach me? At [github specific gmail account](mailto:syedumerahmedcode@gma
 
 
 
- 
