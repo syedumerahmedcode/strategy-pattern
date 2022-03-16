@@ -27,11 +27,8 @@ Since the main idea is to implement strategy method pattern in code, tests are o
 
 **Background**
 
-There are two use cases in programming which are not so easy to solve when applied to a number of classes/large code base. They are:
-
-* multiple if/else for a logic: TODO: Describe this part!
-
-* Inheritance cases in which not all methods must be implemented in child classes: TODO: Describe this part!
+* Inheritance cases in which not all methods must be implemented in child classes: While inheritance is great at sharing behavior of parent class with its sub classes, there are time when it is not desired to implement methods in child classes. Please consider the following scenario:
+ 
 
 **Reasons for using strategy method pattern:**
 - Problem with inheritance: TODO: Describe it with a general scenario. Use the example of Ducks but in a general way.
@@ -79,7 +76,7 @@ Feature requests, issues, pull requests and questions are welcome.
 - [3](https://www.youtube.com/watch?v=13nftsQUUE0): Strategy Pattern Screencast – OO Design Patterns Screencasts (ep 1) **(Youtube)**
 - [4](https://refactoring.guru/design-patterns/strategy): Design Patterns / Behavioral Patterns / Strategy
 - [5](https://www.go4expert.com/articles/design-patterns-simple-examples-t5127/#strategy): Design Patterns in Simple Examples
-- [6](https://softwareengineering.stackexchange.com/questions/418391/advantages-of-strategy-design-pattern-versus-simple-if-else): Advantages of strategy design pattern versus simple if-else
+
 
 ## Contact Information
 
