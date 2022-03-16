@@ -43,7 +43,7 @@ However, if we create a child class:
 
 Also, in the future, if a method to Duck class is introduced, it must be implemented in all of its sub classes regardless of the fact it makes sense or not.
 
-Another interesting scenario is that sometimes there are certain methods(or behaviors) which are shared across _some_ child classes but _not all_ child classes.  
+Another interesting scenario is that sometimes there are certain methods(or behaviors) which are shared across <ins>_some_</ins> child classes but <ins>_not all_</ins> child classes.  
   
 This is where using strategy pattern makes sense as described below.
 
