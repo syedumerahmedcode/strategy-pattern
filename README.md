@@ -28,7 +28,23 @@ Since the main idea is to implement strategy method pattern in code, tests are o
 **Background**
 
 * Inheritance cases in which not all methods must be implemented in child classes: While inheritance is great at sharing behavior of parent class with its sub classes, there are time when it is not desired to implement methods in child classes. Please consider the following scenario:
- 
+
+We have a parent class: 
+- **Duck** which has the following methods: _display()_ and _fly()_. Here, the methods do exactly what they are named.
+
+Now, we create a child class:
+**CityDuck** and it can also override _display()_ and _fly()_ without any problems.
+
+Additionally, we can also create a child class:
+**WildDuck** and it can also override _display()_ and _fly()_ without any problems.
+
+However, if we create a child class:
+**RubberDuck** then we have a problem as _display()_ method is overridden without any problems but if does not make any sense to override _fly()_ method as a rubber duck does not fly. Unfortunately, we must do it (probably with an empty implementation) as we are required by inheritance to do so. 
+
+Also, in the future, if a method to Duck class is introduced, it must be implemented in all of its sub classes regardless of the fact it makes sense or not.
+
+TBD 
+  
 
 **Reasons for using strategy method pattern:**
 - Problem with inheritance: TODO: Describe it with a general scenario. Use the example of Ducks but in a general way.
