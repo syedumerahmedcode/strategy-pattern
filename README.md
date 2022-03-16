@@ -16,7 +16,7 @@
 
 The aim of this project is to show case how can one use strategy pattern to describe a bunch of algorithms, put each of them into a separate class, and make their objects interchangeable. 
 
-In simple words,  It allows us to change the algorithm independently without changing the client using it.
+In simple words, it allows us to change the algorithm independently without changing the client using it.
 
 
 ## Out Of Scope
@@ -26,7 +26,7 @@ Since the main idea is to implement strategy method pattern in code, tests are o
 ## Explanation Strategy Pattern
 
 **Reasons for using strategy method pattern:**
-- Problem with inheritance: TODO: Describe it with a general scenario. Use theexample of Ducks but in a general way.
+- Problem with inheritance: TODO: Describe it with a general scenario. Use the example of Ducks but in a general way.
 - strategy pattern uses composition.
 
 The **scenario used in this project** is as follows:
@@ -40,7 +40,12 @@ The **scenario used in this project** is as follows:
 
 ## Explanation Other Important Points
 
-- TODO: Describe this part.
+Using strategy pattern has the following advantages:
+
+- One can isolate the implementation details of an algorithm from the code that uses it.
+- We can swap the algorithms used inside an object at runtime.
+- By using this design pattern, we replace inheritance with composition.
+- Open/Closed principle of SOLID is upheld i.e. we can introduce new strategies without having to change the context.
 
 ## Technologies Used
 
@@ -65,6 +70,7 @@ Feature requests, issues, pull requests and questions are welcome.
  **(Youtube)**
 - [3](https://www.youtube.com/watch?v=13nftsQUUE0): Strategy Pattern Screencast – OO Design Patterns Screencasts (ep 1) **(Youtube)**
 - [4](https://refactoring.guru/design-patterns/strategy): Design Patterns / Behavioral Patterns / Strategy
+- [5](https://www.go4expert.com/articles/design-patterns-simple-examples-t5127/#strategy): Design Patterns in Simple Examples
 
 ## Contact Information
 
