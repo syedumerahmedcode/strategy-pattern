@@ -72,7 +72,7 @@ At runtime, we will _inject_ the necessary behaviors in the modified Duck class 
 
 A general class diagram for this design pattern is as follows:
 
-![StrategyPatternInGeneral](https://github.com/syedumerahmedcode/strategy-pattern/blob/master/src/main/resources/StrategyPatternInGeneral.jpeg)
+![StrategyPatternInGeneral](https://github.com/syedumerahmedcode/strategy-pattern/blob/master/src/main/resources/StrategyPatternInGeneral.jpg)
 
 **Scenario of the example project:** 
 
