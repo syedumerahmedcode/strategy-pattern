@@ -16,7 +16,7 @@
 
 The aim of this project is to show case how can one use strategy pattern to describe a bunch of algorithms, put each of them into a separate class, and make their objects interchangeable. 
 
-In simple words, it allows us to change the algorithm independently without changing the client using it.
+In simple words, it allows us to change the algorithm independently without changing the client using it. Strategy pattern can be seen as another name for dependency injection.
 
 
 ## Out Of Scope
@@ -47,9 +47,16 @@ Another interesting scenario is that sometimes there are certain methods(or beha
   
 This is where using strategy pattern makes sense as described below.
 
-**Reasons for using strategy method pattern:**
+The definition of Strategy pattern from `Gang of Four` is as follows:
 
-- strategy pattern uses composition. Due to this nature, we can extract out the behavior into separate interfaces, create multiple classes which implement these methods(can also be considered as algorithms) and inject them into the client class. 
+```text
+
+"Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from clients that use it."
+
+```
+
+Strategy pattern uses composition. Due to this nature, we can extract out the behavior into separate interfaces, create multiple classes which implement these methods(can also be considered as algorithms) and inject them into the client class. 
+
 
 So, for the example in previous section, we will create: 
 _IDisplayBehavior_ containing _display()_ method and with concrete implementations: _CityDuckDisplay_ and _RubberDuckDisplay_ classes.
@@ -64,9 +71,9 @@ A general class diagram for this design pattern is as follows:
 
 The **scenario used in this project** is as follows:
 
-We have a simulation program that simulates the a coin flipper and returns and return heads 50% of the time and tails 50% of the time. Now, we want to write the results of the coin flip in different forms such as either writing it on the terminal, saving the result in a CSV file or in a memory. In other words, we have **different strategies** to display the results in **different classes** and we want to use them as per the need of the program.
+We have a simulation program that simulates the a coin flipper and returns and return heads 50% of the time and tails 50% of the time. Now, we want to write the results of the coin flip in different forms such as either writing it on the terminal, saving the result in a CSV file or in a memory. In other words, we have **different strategies** to display the results in **different classes** and we want to use them as per the need of the program. The logic for writing the output of the coin flipper is where we intend to use startegy pattern. 
 
-This is solved using Strategy pattern. We create a `Writer` Interface which defines the method definition `write()` as follows:
+How is it solved using Strategy pattern? We create a `Writer` Interface which defines the method definition `write()` as follows:
 
 ```java
 
@@ -203,12 +210,17 @@ The advantage is that `Simulation` does not need to know about the specific writ
 
 ## Explanation Other Important Points
 
-Using strategy pattern has the following advantages:
+**Possible symptoms of when to use strategy pattern:** 
+
+If there is something that one feels is hard-coded in a place where it should not be hard-coded, one can almost always dependency inject that thing. One can always encapsulate it, put it in a class, give it a name and them delegate it to the method that would execute that particular piece of logic.
+
+**Using strategy pattern has the following advantages:**
 
 - One can isolate the implementation details of an algorithm from the code that uses it.
 - We can swap the algorithms used inside an object at runtime.
 - By using this design pattern, we replace inheritance with composition.
 - Open/Closed principle of SOLID is upheld i.e. we can introduce new strategies without having to change the context.
+- Design pattern open up new avenues of abstraction or to put in more elegantly, how it can make your code base afford particular types of change requests very cheaply.
 
 ## Technologies Used
 
@@ -234,6 +246,7 @@ Feature requests, issues, pull requests and questions are welcome.
 - [3](https://www.youtube.com/watch?v=13nftsQUUE0): Strategy Pattern Screencast – OO Design Patterns Screencasts (ep 1) **(Youtube)**
 - [4](https://refactoring.guru/design-patterns/strategy): Design Patterns / Behavioral Patterns / Strategy
 - [5](https://www.go4expert.com/articles/design-patterns-simple-examples-t5127/#strategy): Design Patterns in Simple Examples
+- [6](https://springframework.guru/gang-of-four-design-patterns/strategy-pattern/): Strategy Pattern
 
 
 ## Contact Information
