@@ -64,9 +64,9 @@ A general class diagram for this design pattern is as follows:
 
 The **scenario used in this project** is as follows:
 
-We have a simulation program that simulates the a coin flipper and returns and return heads 50% of the time and tails 50% of the time. Now, we want to write the results of the coin flip in different forms such as either writing it on the terminal, saving the result in a CSV file or in a memory.
+We have a simulation program that simulates the a coin flipper and returns and return heads 50% of the time and tails 50% of the time. Now, we want to write the results of the coin flip in different forms such as either writing it on the terminal, saving the result in a CSV file or in a memory. In other words, we have **different strategies** to display the results in **different classes** and we want to use them as per the need of the program.
 
-This is solved using Strategy pattern. We create a _Writer_ Interface which defines the method definition `write()` as follows:
+This is solved using Strategy pattern. We create a `Writer` Interface which defines the method definition `write()` as follows:
 
 ```java
 
