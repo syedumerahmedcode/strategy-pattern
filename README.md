@@ -64,7 +64,66 @@ A general class diagram for this design pattern is as follows:
 
 The **scenario used in this project** is as follows:
 
-- TODO: Describe scenario!
+We have a simulation program that simulates the a coin flipper and returns and return heads 50% of the time and tails 50% of the time. Now, we want to write the results of the coin flip in different forms such as either writing it on the terminal, saving the result in a CSV file or in a memory.
+
+This is solved using Strategy pattern. We create a _Writer_ Interface which defines the method definition `write()` as follows:
+
+```java
+
+public interface Writer {
+	/**
+	 * This method can be used to either write on the command line, or write in a
+	 * csv file, or in memory
+	 * 
+	 * @param result The result to write.
+	 */
+	public void write(String result);
+
+}
+
+```
+ 
+Next, we create two two implementations `ConsoleWriter` and `CsvWriter` which implement this interface.
+
+```java
+
+public class ConsoleWriter implements Writer {
+
+	@Override
+	public void write(String result) {
+		System.out.println("Writes " + result + " on the screen.");
+	}
+
+}
+
+
+```
+
+and
+
+
+```java
+
+public class CsvWriter implements Writer {
+	String path;
+
+	public CsvWriter(String path) {
+		this.path = path;
+	}
+
+	@Override
+	public void write(String result) {
+		/**
+		 * Code is kept simple on purpose.
+		 */
+		System.out.println("Writes " + result + " to " + path);
+	}
+
+}
+
+```
+
+
 - TODO: Create a rough UML diagram and adapt to the simulation solution implemented in the code.
 
 **Solution:**
