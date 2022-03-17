@@ -249,7 +249,7 @@ Feature requests, issues, pull requests and questions are welcome.
 
 - [1](https://www.youtube.com/watch?v=v9ejT8FO-7I): Strategy Pattern – Design Patterns (ep 1) **(Youtube)** **[Primary Video resource for this project]**
 - [2](https://www.youtube.com/watch?v=slfeCvztnT4): Strategy Pattern (in real life) Screencast – OO Design Patterns Screencasts (ep 2)
- **(Youtube)**
+ **(Youtube)**  **[Primary Video resource for this project]**
 - [3](https://www.youtube.com/watch?v=13nftsQUUE0): Strategy Pattern Screencast – OO Design Patterns Screencasts (ep 1) **(Youtube)**
 - [4](https://refactoring.guru/design-patterns/strategy): Design Patterns / Behavioral Patterns / Strategy
 - [5](https://www.go4expert.com/articles/design-patterns-simple-examples-t5127/#strategy): Design Patterns in Simple Examples
