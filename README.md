@@ -72,9 +72,11 @@ At runtime, we will _inject_ the necessary behaviors in the modified Duck class 
 
 A general class diagram for this design pattern is as follows:
 
-- TODO: Insert general diagram--> Time stamp: 33:17 in resource [1]. 
+- TODO: Insert general diagram--> Time stamp: 33:17 in resource [1].
 
-The **scenario used in this project** is as follows:
+**Scenario of the example project:** 
+
+The scenario used in this project is as follows:
 
 We have a simulation program that simulates the a coin flipper and returns and return heads 50% of the time and tails 50% of the time. Now, we want to write the results of the coin flip in different forms such as either writing it on the terminal, saving the result in a CSV file or in a memory. In other words, we have **different strategies** to display the results in **different classes** and we want to use them as per the need of the program. The logic for writing the output of the coin flipper is where we intend to use strategy pattern. 
 
