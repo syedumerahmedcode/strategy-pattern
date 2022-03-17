@@ -220,7 +220,7 @@ None
 
 ## Commands
 
-- TODO: Describe this part.
+In order to run the project, open project in an IDE ---> Navigate to com.umer.simulation package ---> Right click on  `Program.java` ---> Run As ---> Java Application ---> Enter appropriate input
 
 ## Contribution
 
