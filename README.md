@@ -212,7 +212,7 @@ public class Program {
 
 The advantage is that `Simulation` does not need to know about the specific writer since an interface is passed. Now, in the future, if we want to create some other concrete implementation of `Writer` interface, we can do that, pass it as a parameter from `Program` class and there will be no change in the `Simulation` class.  
 
-- TODO: Create a rough UML diagram and adapt to the simulation solution implemented in the code.
+![StrategyPatternForWriter](https://github.com/syedumerahmedcode/strategy-pattern/blob/master/src/main/resources/StrategyPatternForWriter.jpg)
 
 
 ## Explanation Other Important Points
