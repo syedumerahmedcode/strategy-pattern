@@ -123,12 +123,83 @@ public class CsvWriter implements Writer {
 
 ```
 
+In the `Simulation` class, the writer is injected(passed as a parameter) in the constructor as shown below: 
+
+```java
+
+
+public class Simulation {
+	// constants
+	private static final String TAILS = "Tails";
+	private static final String HEADS = "Heads";
+	// Variables 
+	Writer writer;
+	int numberOfRuns;
+	Random rnd;
+
+	//constructor
+	// Here, writer is passed as a parameter
+	public Simulation(int numberOfRuns, long seed, Writer writer) {
+		this.writer = writer;
+		this.numberOfRuns = numberOfRuns;
+		this.rnd = new Random(seed);
+	}
+
+	// run the simulation
+	public void run() {
+		ArrayList<String> results = new ArrayList<String>();
+		for (int i = 0; i < numberOfRuns; i++) {
+			String result = executeSimulation();
+			results.add(result);
+		}
+		// display results from the stream
+		results.stream()
+			.forEach((currentResult) -> 
+						this.writer
+							.write((String) currentResult));
+
+	}
+
+
+```
+
+Finally, we defined in `Program` class which _logic_ to use to write the result. In the current scenario, we are writing to a csv file but this can easily be switched to console terminal.
+
+```java
+
+public class Program {
+
+	private static final String PLEASE_ENTER_THE_INITIAL_SEED_VALUE = "Please enter the initial seed value:";
+	private static final String PLEASE_ENTER_THE_NUMBER_OF_RUNS = "Please enter the number of runs:";
+	private static final String DUMMY_OUTPUT_FILE_PATH = "output.txt";
+
+	public static void main(String[] args) throws Exception {
+
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println(PLEASE_ENTER_THE_NUMBER_OF_RUNS);
+		int numberOfRuns = Integer.parseInt(input.nextLine());
+
+		System.out.println(PLEASE_ENTER_THE_INITIAL_SEED_VALUE);
+		long seed = Long.parseUnsignedLong(input.nextLine());
+
+		//		Writer writer=new ConsoleWriter();
+		String path = DUMMY_OUTPUT_FILE_PATH;
+		Writer writer = new CsvWriter(path);
+		
+		Simulation simulation = new Simulation(numberOfRuns, seed, writer);
+		simulation.run();
+		
+		input.close();
+	}
+}
+
+```
+
+The advantage is that `Simulation` does not need to know about the specific writer since an interface is passed. Now, in the future, if we want to create some other concrete implementation of `Writer` interface, we can do that, pass it as a parameter from `Program` class and there will be no change in the `Simulation` class.  
 
 - TODO: Create a rough UML diagram and adapt to the simulation solution implemented in the code.
 
-**Solution:**
-
-- TODO: describe solution with the help of code.
 
 ## Explanation Other Important Points
 
