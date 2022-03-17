@@ -72,7 +72,7 @@ At runtime, we will _inject_ the necessary behaviors in the modified Duck class 
 
 A general class diagram for this design pattern is as follows:
 
-- TODO: Insert general diagram--> Time stamp: 33:17 in resource [1].
+![StrategyPatternInGeneral](https://github.com/syedumerahmedcode/strategy-pattern/blob/master/src/main/resources/StrategyPatternInGeneral.jpeg)
 
 **Scenario of the example project:** 
 
