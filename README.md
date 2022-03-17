@@ -27,25 +27,29 @@ Since the main idea is to implement strategy method pattern in code, tests are o
 
 **Background**
 
-* Inheritance cases in which not all methods must be implemented in child classes: While inheritance is great at sharing behavior of parent class with its sub classes, there are time when it is not desired to implement methods in child classes. Please consider the following scenario:
+**Inheritance cases in which not all methods must be implemented in child classes:** 
+
+While inheritance is great at sharing behavior of parent class with its sub classes, there are time when it is not desired to implement methods in child classes. Please consider the following scenario:
 
 We have a parent class: 
 - **Duck** which has the following methods: _display()_ and _fly()_. Here, the methods do exactly what they are named.
 
 Now, we create a child class:
-**CityDuck** and it can also override _display()_ and _fly()_ without any problems.
+- **CityDuck** and it can also override _display()_ and _fly()_ without any problems.
 
 Additionally, we can also create a child class:
-**WildDuck** and it can also override _display()_ and _fly()_ without any problems.
+- **WildDuck** and it can also override _display()_ and _fly()_ without any problems.
 
 However, if we create a child class:
-**RubberDuck** then we have a problem as _display()_ method is overridden without any problems but if does not make any sense to override _fly()_ method as a rubber duck does not fly. Unfortunately, we must do it (probably with an empty implementation) as we are required by inheritance to do so. 
+- **RubberDuck** then we have a problem as _display()_ method is overridden without any problems but if does not make any sense to override _fly()_ method as a rubber duck does not fly. Unfortunately, we must do it (probably with an empty implementation) as we are required by inheritance to do so. 
 
 Also, in the future, if a method to Duck class is introduced, it must be implemented in all of its sub classes regardless of the fact it makes sense or not.
 
 Another interesting scenario is that sometimes there are certain methods(or behaviors) which are shared across <ins>_some_</ins> child classes but <ins>_not all_</ins> child classes.  
   
 This is where using strategy pattern makes sense as described below.
+
+**Strategy Pattern**
 
 The definition of Strategy pattern from `Gang of Four` is as follows:
 
@@ -72,7 +76,7 @@ A general class diagram for this design pattern is as follows:
 
 The **scenario used in this project** is as follows:
 
-We have a simulation program that simulates the a coin flipper and returns and return heads 50% of the time and tails 50% of the time. Now, we want to write the results of the coin flip in different forms such as either writing it on the terminal, saving the result in a CSV file or in a memory. In other words, we have **different strategies** to display the results in **different classes** and we want to use them as per the need of the program. The logic for writing the output of the coin flipper is where we intend to use startegy pattern. 
+We have a simulation program that simulates the a coin flipper and returns and return heads 50% of the time and tails 50% of the time. Now, we want to write the results of the coin flip in different forms such as either writing it on the terminal, saving the result in a CSV file or in a memory. In other words, we have **different strategies** to display the results in **different classes** and we want to use them as per the need of the program. The logic for writing the output of the coin flipper is where we intend to use strategy pattern. 
 
 How is it solved using Strategy pattern? We create a `Writer` Interface which defines the method definition `write()` as follows:
 
