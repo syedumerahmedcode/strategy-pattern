@@ -51,7 +51,8 @@ The definition of Strategy pattern from `Gang of Four` is as follows:
 
 ```text
 
-"Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from clients that use it."
+"Define a family of algorithms, encapsulate each one, and make them interchangeable. 
+Strategy lets the algorithm vary independently from clients that use it."
 
 ```
 
