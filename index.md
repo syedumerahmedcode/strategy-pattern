@@ -72,7 +72,7 @@ At runtime, we will _inject_ the necessary behaviors in the modified Duck class 
 
 A general class diagram for this design pattern is as follows:
 
-![StrategyPatternInGeneral](https://github.com/syedumerahmedcode/strategy-pattern/blob/master/src/main/resources/StrategyPatternInGeneral.jpg)
+![StrategyPatternInGeneral.jpg](https://github.com/syedumerahmedcode/strategy-pattern/blob/master/src/main/resources/StrategyPatternInGeneral.jpg)
 
 **Scenario of the example project:** 
 
@@ -212,7 +212,7 @@ public class Program {
 
 The advantage is that `Simulation` does not need to know about the specific writer since an interface is passed. Now, in the future, if we want to create some other concrete implementation of `Writer` interface, we can do that, pass it as a parameter from `Program` class and there will be no change in the `Simulation` class.  
 
-![StrategyPatternForWriter](https://github.com/syedumerahmedcode/strategy-pattern/blob/master/src/main/resources/StrategyPatternForWriter.jpg)
+![StrategyPatternForWriter.jpg](https://github.com/syedumerahmedcode/strategy-pattern/blob/master/src/main/resources/StrategyPatternForWriter.jpg)
 
 
 ## Explanation Other Important Points
