@@ -16,7 +16,7 @@
 
 The aim of this project is to showcase how can one use strategy pattern to describe a bunch of algorithms, put each of them into a separate class, and make their objects interchangeable. 
 
-In simple words, it allows us to change the algorithm independently without changing the client using it. Strategy pattern can be seen as another name for dependency injection.
+In simple words, it allows us to change the algorithm independently without changing the client using it. Strategy pattern can be seen as another name for dependency injection.--
 
 
 ## Out Of Scope
